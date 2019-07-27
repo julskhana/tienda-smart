@@ -16,6 +16,8 @@ public class TiendaSmartApp {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println("Tienda Smart");
+        System.out.println("Bienvenido...\nJulianB");
     }
     
 }
