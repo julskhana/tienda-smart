@@ -5,6 +5,8 @@
  */
 package tienda.smart.app;
 
+import Formularios.frmLogin;
+
 /**
  *
  * @author Julian
@@ -18,6 +20,9 @@ public class TiendaSmartApp {
         // TODO code application logic here
         System.out.println("Tienda Smart");
         System.out.println("Bienvenido...\nJulianB");
+        
+        frmLogin inicio = new frmLogin();
+        inicio.setVisible(true);
     }
     
 }
