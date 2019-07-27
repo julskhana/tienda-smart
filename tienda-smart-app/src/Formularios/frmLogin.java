@@ -35,9 +35,9 @@ public class frmLogin extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         txUsuario = new javax.swing.JTextField();
-        txClave = new javax.swing.JTextField();
         ico_user = new javax.swing.JLabel();
         ico_lock = new javax.swing.JLabel();
+        pfClave = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Autenticacion - Tienda Smart");
@@ -50,6 +50,11 @@ public class frmLogin extends javax.swing.JFrame {
         });
 
         btlimpiar.setText("Limpiar");
+        btlimpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btlimpiarActionPerformed(evt);
+            }
+        });
 
         btSalir.setText("Salir");
         btSalir.addActionListener(new java.awt.event.ActionListener() {
@@ -90,7 +95,7 @@ public class frmLogin extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(txUsuario)
-                            .addComponent(txClave, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(pfClave, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE))
                         .addGap(27, 27, 27)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(ico_user, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
@@ -116,7 +121,7 @@ public class frmLogin extends javax.swing.JFrame {
                         .addGap(35, 35, 35)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2)
-                            .addComponent(txClave, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(pfClave, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(ico_lock, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -146,6 +151,12 @@ public class frmLogin extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btSalirActionPerformed
 
+    private void btlimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btlimpiarActionPerformed
+        // TODO add your handling code here:
+        txUsuario.setText("");
+        pfClave.setText("");
+    }//GEN-LAST:event_btlimpiarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -158,7 +169,7 @@ public class frmLogin extends javax.swing.JFrame {
     private javax.swing.JLabel ico_user;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JTextField txClave;
+    private javax.swing.JPasswordField pfClave;
     private javax.swing.JTextField txUsuario;
     // End of variables declaration//GEN-END:variables
 }

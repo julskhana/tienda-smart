@@ -6,6 +6,7 @@
 package tienda.smart.app;
 
 import Formularios.frmLogin;
+import bd.ConexionBD;
 
 /**
  *
@@ -20,6 +21,15 @@ public class TiendaSmartApp {
         // TODO code application logic here
         System.out.println("Tienda Smart");
         System.out.println("Bienvenido...\nJulianB");
+        
+        ConexionBD c = new ConexionBD();
+        try {
+            c.conectar();
+            c.desconectar();
+        } catch (Exception e) {
+            System.out.println("Error DB - "+e);
+        }
+            
         
         frmLogin inicio = new frmLogin();
         inicio.setVisible(true);

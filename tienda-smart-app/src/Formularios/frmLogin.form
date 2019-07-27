@@ -42,7 +42,7 @@
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="txUsuario" max="32767" attributes="0"/>
-                          <Component id="txClave" min="-2" pref="186" max="-2" attributes="0"/>
+                          <Component id="pfClave" pref="186" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -74,7 +74,7 @@
                       <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txClave" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="pfClave" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -106,6 +106,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Limpiar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btlimpiarActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btSalir">
       <Properties>
@@ -126,8 +129,6 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txUsuario">
-    </Component>
-    <Component class="javax.swing.JTextField" name="txClave">
     </Component>
     <Component class="javax.swing.JLabel" name="ico_user">
       <Properties>
@@ -150,6 +151,8 @@
           <Dimension value="[45, 45]"/>
         </Property>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JPasswordField" name="pfClave">
     </Component>
   </SubComponents>
 </Form>

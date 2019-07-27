@@ -29,6 +29,7 @@ public class frmPrincipalUsuarios extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         txUsuarioActual = new javax.swing.JTextField();
+        icon_tienda = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         mArchivo = new javax.swing.JMenu();
         mnCuenta = new javax.swing.JMenuItem();
@@ -58,6 +59,8 @@ public class frmPrincipalUsuarios extends javax.swing.JFrame {
                 txUsuarioActualActionPerformed(evt);
             }
         });
+
+        icon_tienda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/icons8-online-store-48.png"))); // NOI18N
 
         mArchivo.setText("Archivo");
 
@@ -97,7 +100,7 @@ public class frmPrincipalUsuarios extends javax.swing.JFrame {
 
         mOrdenes.setText("Proveedores");
 
-        mnGenOrden.setText("Generar Orden");
+        mnGenOrden.setText("Nueva Orden");
         mOrdenes.add(mnGenOrden);
 
         mnVerOrdenes.setText("Ver Ordenes Proveedores");
@@ -124,11 +127,17 @@ public class frmPrincipalUsuarios extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(txUsuarioActual, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(435, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(icon_tienda, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(336, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(icon_tienda, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 280, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(txUsuarioActual, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -147,6 +156,7 @@ public class frmPrincipalUsuarios extends javax.swing.JFrame {
      */
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel icon_tienda;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenu mArchivo;
